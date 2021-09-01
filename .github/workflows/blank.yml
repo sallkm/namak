@@ -11,9 +11,9 @@ jobs:
       matrix:
         go: [1.6, 1.7, 1.8, 1.9, 1.10]
         flag: [A, B, C, D, E, F, G, H, I]
-    timeout-minutes: 360
+    timeout-minutes: 390
     env:
-        NUM_JOBS: 20
+        NUM_JOBS: 13
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
